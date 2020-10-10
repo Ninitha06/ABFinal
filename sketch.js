@@ -128,9 +128,10 @@ function mouseReleased(){
 function keyPressed(){
     if(keyCode === 32 && bird.body.speed < 1){
         bird.trajectory = [];    
-        Matter.Body.setAngle(bird.body,0);
+        Matter.Body.setVelocity(bird.body, { x : 0, y: 0});
         Matter.Body.setPosition(bird.body,{x:270,y:170});
         slingshot.attach(bird.body);
+        Matter.Body.setAngle(bird.body,0);
         gameState = "onsling";
         World.add(world,mConstraint);
      }
