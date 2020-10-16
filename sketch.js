@@ -14,6 +14,7 @@ var mConstraint;
 var score = 0
 function preload() {
     getBackgroundImg();
+    bgAlternate = loadImage("sprites/bg.png");
     sling1Img = loadImage("sprites/sling1.png");
     sling2Img = loadImage("sprites/sling2.png");
 }
@@ -70,7 +71,8 @@ function setup(){
 function draw(){
     if(backgroundImg)
         background(backgroundImg);
-
+    else
+    background(bgAlternate);
         noStroke();
         textSize(35);
         fill("white");
@@ -141,7 +143,7 @@ function keyPressed(){
 async function getBackgroundImg()
 {
     var bg;
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
    // console.log(response);
     var responseJSON = await response.json();
     var dateTime = responseJSON.datetime;
