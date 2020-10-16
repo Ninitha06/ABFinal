@@ -24,23 +24,24 @@ function setup(){
     world = engine.world;
 
 
-    ground = new Ground(600,height,1200,20);
-    platform = new Ground(150, 505, 300, 300);
+    ground = new Ground(600,590,1200,20);
+    platform = new Ground(150, 475, 300, 240);
 
-    box1 = new Box(800,520,70,70);
-    box2 = new Box(1000,520,70,70);
+    box1 = new Box(800,540,70,70);
+    box2 = new Box(1000,540,70,70);
     pig1 = new Pig(900, 540);
     log1 = new Log(900,500,280, PI/2);
 
-    box3 = new Box(800,460,70,70);
-    box4 = new Box(1000,460,70,70);
-    pig2 = new Pig(900, 480);
+    box3 = new Box(800,450,70,70);
+    box4 = new Box(1000,450,70,70);
+    pig2 = new Pig(900, 450);
 
-    log3 =  new Log(900,400,280, PI/2);
+    log3 =  new Log(900,410,280, PI/2);
 
-    box5 = new Box(900,400,70,70);
+    box5 = new Box(900,360,70,70);
     log4 = new Log(840,360,150, PI/7);
     log5 = new Log(960,360,150, -PI/7);
+   
    
         
     bird = new Bird(270,170);
