@@ -14,9 +14,9 @@ var mConstraint;
 var score = 0
 function preload() {
     getBackgroundImg();
-    bgAlternate = loadImage("sprites/bg.png");
-    sling1Img = loadImage("sprites/sling1.png");
-    sling2Img = loadImage("sprites/sling2.png");
+    bgAlternate = loadImage("../sprites/bg.png");
+    sling1Img = loadImage("../sprites/sling1.png");
+    sling2Img = loadImage("../sprites/sling2.png");
 }
 
 function setup(){
