@@ -2,7 +2,7 @@ class Bird extends BaseClass {
   constructor(x,y){
     super(x,y,50,50);
     Matter.Body.setMass(this.body,this.body.mass*6);
-    this.body.restitution = 0.5;
+    this.body.restitution = 0.3;
     this.body.frictionAir - 0.001;
     this.image = loadImage("sprites/bird.png");
     this.smokeImage = loadImage("sprites/smoke.png");
@@ -12,7 +12,7 @@ class Bird extends BaseClass {
   display() {
     //this.body.position.x = mouseX;
     //this.body.position.y = mouseY;
-
+    
     super.display();
 
     if(this.body.velocity.x > 10 && this.body.position.x > 270  &&!mouseIsPressed){
